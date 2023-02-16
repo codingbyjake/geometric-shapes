@@ -5,23 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace geometric_shapes {
-    internal class Rect {
-        public int Side1 { get; set; }
-        public int Side2 { get; set; }
+    internal class Rect : Quad {
 
-        public int Perimeter() {
-            return (Side1 + Side2) * 2;
-        }
-
-        public int Area() {
+        public virtual int Area() {
             return Side1 * Side2;
         }
 
-        public Rect() { }
+        public Rect(): base(){ }
 
-        public Rect(int side1, int side2) {
-            Side1 = side1;
-            Side2 = side2;
+        public Rect(int side1, int side2) : base(side1, side2, side1, side2) {
+           
         }
     }
 }

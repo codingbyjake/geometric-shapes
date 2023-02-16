@@ -2,17 +2,17 @@
 using System;
 
 
-Sqr S1 = new Sqr(5);
+Sqr s1 = new Sqr(5);
 
-Console.WriteLine($"Perimeter is {S1.Perimeter()} and Area is {S1.Area()}");
+Console.WriteLine($"Perimeter is {s1.Perimeter()} and Area is {s1.Area()}");
 
-Rect R1 = new Rect(3, 5);
+Rect r1 = new Rect(3, 5);
 
-Console.WriteLine($"Perimeter is {R1.Perimeter()} and Area is {R1.Area()}");
+Console.WriteLine($"Perimeter is {r1.Perimeter()} and Area is {r1.Area()}");
 
-Quad Q1 = new Quad(3, 4, 5, 6);
+Quad q1 = new Quad(3, 4, 5, 6);
 
-Console.WriteLine($"Perimeter is {Q1.Perimeter()}");
+Console.WriteLine($"Perimeter is {q1.Perimeter()}");
 
 
 

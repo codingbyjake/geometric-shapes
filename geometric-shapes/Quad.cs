@@ -11,7 +11,7 @@ namespace geometric_shapes {
         public int Side3 { get; set; }
         public int Side4 { get; set; }
 
-        public int Perimeter() {
+        public virtual int Perimeter() {
             return Side1 + Side2 + Side3 + Side4;
         }
 

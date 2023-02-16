@@ -5,21 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace geometric_shapes {
-    internal class Sqr {
-     public int Side { get; set; }
+    internal class Sqr : Rect {
      
-        public int Perimeter() {
-            return Side * 4;
-        }
+        public Sqr() : base() { }
 
-        public int Area() {
-            return Side * Side;
-        }
-
-        public Sqr() { }
-
-        public Sqr(int side) {
-            Side = side;
+        public Sqr(int side) : base(side, side) {
         }
     }
 }
